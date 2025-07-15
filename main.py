@@ -5,8 +5,8 @@ text = input("Input text for cats:")
 
 filename = "./creds/ya_token"
 try:
-    cataas = CatassApi()
-    image = cataas.load_with_text(text)
+    cataasApi = CatassApi()
+    image = cataasApi.load_with_text(text)
 
     yandexApi = YandexDiscApi(filename)
     yandexApi.upload(image)
