@@ -11,6 +11,7 @@ try:
     yandexApi = YandexDiscApi(filename)
     yandexApi.upload(image)
 
+    print(f"Cat image with text \"{text}\" successfully uploadede on yandex disk.")
     exit(1)
 except FileNotFoundError:
     print(f"File {filename} does not find.")
